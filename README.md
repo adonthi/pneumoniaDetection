@@ -1,0 +1,2 @@
+# pneumoniaDetection
+Detecting pneumonia

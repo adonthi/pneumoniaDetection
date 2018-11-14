@@ -2,7 +2,9 @@
 normal_images/
 opacity_images/
 stage_2_train_images/
-
+normal_images.zip
+opacity_images.zip
+stage_2_test_images/
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

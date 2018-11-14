@@ -2,7 +2,7 @@ import os
 import numpy as np
 import png
 import pydicom
-directory = "C:\Users\Abhijith\Documents\Comp 562\Project\images"
+directory = "C:\\Users\\Badri Donthi\\Documents\\pneumoniaDetection\\opacity_images"
 for filename in os.listdir(directory):
     if filename.endswith(".dcm"):
         print(filename)

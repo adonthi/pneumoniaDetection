@@ -17,7 +17,7 @@ from keras.layers import Conv2D
 from keras.layers import MaxPooling2D
 from keras.layers import Flatten
 from keras.layers import Dense
-
+from keras.models import model_from_json
 # Initialising the CNN
 classifier = Sequential()
 
@@ -63,8 +63,14 @@ test_set = test_datagen.flow_from_directory('separated_test_set',
                                             class_mode = 'binary')
 print("alexa play sad")
 classifier.fit_generator(training_set,
-                         steps_per_epoch = 8000,
-                         epochs = 10,
+                         steps_per_epoch = 667,
+                         epochs = 2,
                          validation_data = test_set,
-                         validation_steps = 2000)
+                         validation_steps = 167)
 print("herro")
+model_json =classifier.to_json()
+with open("model.json", "w") as json_file:
+    json_file.write(model_json)
+# serialize weights to HDF5
+classifier.save_weights("model.h5")
+print("Saved model to disk");

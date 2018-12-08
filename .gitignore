@@ -5,6 +5,16 @@ stage_2_train_images/
 normal_images.zip
 opacity_images.zip
 stage_2_test_images/
+all_images/
+model2_training/
+model3_training/
+pdetection_grayscale/
+separated_test_set/
+sepmodel2_test_set/
+sepmodel3_test_set/
+sepmodel4_test_set/
+training_set/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
